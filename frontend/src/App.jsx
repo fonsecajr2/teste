@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { Menu, X } from "lucide-react";
 import logo from "./assets/logo10.png";
 import me from "./assets/profile.jpg";
+
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -12,6 +14,17 @@ import "swiper/css/autoplay";
 
 function App () {
   const[isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    // Ensure Swiper recognizes the buttons after the component mounts
+    const nextButton = document.querySelector(".custom-next");
+    const prevButton = document.querySelector(".custom-prev");
+
+    if (nextButton && prevButton) {
+      nextButton.classList.add("swiper-button-next");
+      prevButton.classList.add("swiper-button-prev");
+    }
+  }, []);
 
   return(
     <div className="min-h-screen w-full flex flex-col bg-yellow-100 overflow-x-hidden">
@@ -64,9 +77,15 @@ function App () {
 
       <div className="min-h-screen flex justify-center items-center">
 
+        <button className="custom-prev absolute left-0 z-10 bg-black text-white p-2 rounded-full"><ChevronLeft size={30} /></button>
+        <button className="custom-next absolute right-0 z-10 bg-black text-white p-2 rounded-full"><ChevronRight size={30} /></button>
+        
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          navigation
+          navigation={{
+            nextEl: ".custom-next",
+            prevEl: ".custom-prev",
+          }}
           pagination={{ clickable: true }}
           spaceBetween={30}
           slidesPerView={3}
@@ -74,6 +93,8 @@ function App () {
           className="w-full h-screen"
           autoplay={{ delay: 5000, disableOnInteraction: false }}
         >
+          
+
           <SwiperSlide>
             <div className="flex justify-center items-center w-full h-screen">
               <h1>Front-End Skills and Frameworks</h1>
