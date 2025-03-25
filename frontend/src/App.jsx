@@ -75,10 +75,17 @@ function App () {
       </div>
 
 
-      <div className="min-h-screen flex justify-center items-center">
+      <div className="min-h-screen flex justify-center items-center relative">
 
-        <button className="custom-prev absolute left-0 z-10 bg-black text-white p-2 rounded-full"><ChevronLeft size={30} /></button>
-        <button className="custom-next absolute right-0 z-10 bg-black text-white p-2 rounded-full"><ChevronRight size={30} /></button>
+        <h1 className="text-3xl font-bold flex absolute top-11">My Skills</h1>
+
+        <button className="custom-prev absolute left-0 z-10 bg-transparent text-yellow-600 p-6 rounded-full transition-transform duration-300 hover:scale-210">
+          <ChevronLeft size={20} />
+        </button>
+
+        <button className="custom-next absolute right-0 z-10 bg-transparent text-yellow-600 p-6 rounded-full transition-transform duration-300 hover:scale-210">
+          <ChevronRight size={20} />
+        </button>
         
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
