@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, Linkedin } from "lucide-react";
 import logo from "./assets/logo10.png";
 import me from "./assets/profile.jpg";
 
@@ -303,7 +303,11 @@ function App () {
         <div>Project 3 - Chat App</div>
       </div>
 
-      <div>Contact Me</div>
+      <div className="min-h-screen flex items-center justify-center">
+        <h1>Contact Me</h1>
+        <Github />
+        <Linkedin />
+      </div>
     </div>
   )
 }
