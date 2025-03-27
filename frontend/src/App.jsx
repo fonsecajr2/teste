@@ -297,10 +297,14 @@ function App () {
       </div>
 
       <div className="min-h-screen">
-        <h1>Projects Div and Expirience</h1>
+        <h1>Projects </h1>
         <div>Project 1 - ERP System</div>
         <div>Project 2 - To Do List</div>
         <div>Project 3 - Chat App</div>
+      </div>
+
+      <div className="min-h-screen">
+          <h1>Experience and Education</h1>
       </div>
 
       <div className="min-h-screen flex-row items-center justify-center">
