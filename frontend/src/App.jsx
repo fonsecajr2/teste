@@ -303,10 +303,20 @@ function App () {
         <div>Project 3 - Chat App</div>
       </div>
 
-      <div className="min-h-screen flex items-center justify-center">
-        <h1>Contact Me</h1>
-        <Github />
-        <Linkedin />
+      <div className="min-h-screen flex-row items-center justify-center">
+        <div>
+          <h1 className="flex justify-center items-center text-3xl font-bold">Contact Me</h1>
+          <h2 className="flex justify-center items-center">Let's Work Together</h2>
+          <p className="flex justify-center items-center">I will glad to help or work with you</p>
+          <ul>
+            <li>Haryana, India</li>
+            <li>Phone: +258 877251624</li>
+            <li>Mail: sheltonfonsecad@gmail.com</li>
+            <li>LinkedIn: linkedin.com/in/fonseca-jr</li>
+          </ul>
+          <Github />
+          <Linkedin />
+        </div>
       </div>
     </div>
   )
