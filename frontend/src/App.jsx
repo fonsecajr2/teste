@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import { Menu, X, Github, Linkedin } from "lucide-react";
+import { Menu, X} from "lucide-react";
+import { SiGithub, SiLinkedin, SiInstagram, SiWhatsapp, SiX} from "react-icons/si";
 import logo from "./assets/logo10.png";
 import me from "./assets/profile.jpg";
 
@@ -63,10 +64,20 @@ function App () {
       <div className="flex-1 min-h-screen px-5 flex flex-col justify-center items-center ">
         <div className="flex justify-center items-center w-full max-w-5xl mt-4 gap-x-20">
           <div className="w-1/2 pr-8 text-left">
-            <h1 className="text-2xl font-bold">Hi, This is Fonseca Junior Here</h1>
-            <p className="">
+            <h1 className="text-2xl font-bold mb-4">Hi, This is Fonseca Junior Here</h1>
+            <p className="mb-4">
               Computer Science and Engineering (CSE) student with a strong interest in software development, cybersecurity, and advanced algorithms. Currently deepening my expertise in data structures such as Binary Search Trees and Linked Lists, along with programming in C++, focusing on designing efficient and scalable solutions.
             </p>
+
+            <div className="flex gap-4 items-center">
+              <div className="bg-amber-700 w-30 flex items-center justify-center h-10 rounded-md gap-2 mt-1.5">
+                <a className="" target="_blank" rel="noopener noreferrer" href="https://wa.me/258877251624">Let's Chat</a>
+                <SiWhatsapp />
+              </div>
+
+              <a href="">dowmload resume</a>
+            </div>
+            
           </div>
           <div className="w-1/2 flex justify-center">
             <img src={me} alt="Image" className="rounded-full"/>
@@ -307,19 +318,29 @@ function App () {
           <h1>Experience and Education</h1>
       </div>
 
-      <div className="min-h-screen flex-row items-center justify-center">
-        <div>
-          <h1 className="flex justify-center items-center text-3xl font-bold">Contact Me</h1>
-          <h2 className="flex justify-center items-center">Let's Work Together</h2>
-          <p className="flex justify-center items-center">I will glad to help or work with you</p>
+      <div className="min-h-screen flex justify-items-start ">
+        <div className="w-1/2 flex flex-col justify-center ms-50 text-left gap-2">
+          <h1 className="flex text-3xl font-bold italic">Contact Me</h1>
+          <h2 className="flex italic">Let's Work Together</h2>
+          <p className="flex  ">I will be glad to help or work with you</p>
           <ul>
             <li>Haryana, India</li>
-            <li>Phone: +258 877251624</li>
-            <li>Mail: sheltonfonsecad@gmail.com</li>
-            <li>LinkedIn: linkedin.com/in/fonseca-jr</li>
+            <li>+258 877251624</li>
+            <li>sheltonfonsecad@gmail.com</li>
           </ul>
-          <Github />
-          <Linkedin />
+
+          <div className="bg-amber-700 w-30 flex items-center justify-center h-10 rounded-md gap-2 mt-1.5">
+            <a className="" target="_blank" rel="noopener noreferrer" href="https://wa.me/258877251624">Let's Chat</a>
+            <SiWhatsapp />
+          </div>
+
+          <div className="flex gap-8 py-4">
+            <a href="https://github.com/fonsecajr2/" target="_blank" rel="noopener noreferrer"><SiGithub /></a>
+            <a href="https://www.linkedin.com/in/fonseca-jr" target="_blank" rel="noopener noreferrer"><SiLinkedin /></a>
+            <a href="https://www.instagram.com/fonseca_jr3/" target="_blank" rel="noopener noreferrer"><SiInstagram/></a>
+            <a href="https://x.com/fnsc2k19" target="_blank" rel="noopener noreferrer"><SiX /></a>
+          </div>
+          
         </div>
       </div>
     </div>
