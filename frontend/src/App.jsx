@@ -296,26 +296,57 @@ function App () {
 
       
 
-      <div className="min-h-screen">
-        <h1>Certificates Div</h1>
-        <ul>
-          <li>Responsive Web Design Certification</li>
-          <li>
-            Red Hat OpenShift Administration I: Operating a Production Cluster (DO180 - RHA) - Ver. 4.14
-          </li>
-          <li>Introduction to CyberSecurity</li>
-        </ul>
+      <div className="min-h-screen flex flex-col justify-center items-center gap-4 space-y-4">
+        <div className="flex">
+          <h1 className="flex justify-center items-center font-bold text-2xl">Certificates Div</h1>
+        </div>
+
+        <div className="flex gap-2">
+          <div className="flex justify-center items-center w-[22vw] bg-amber-600 rounded-md h-[50vh]">
+            <h1>Responsive Web Design Certification</h1>
+          </div>
+          <div className="flex justify-center items-center w-[22vw] bg-amber-600 rounded-md h-[50vh]">
+            <h1>Red Hat OpenShift Administration I: Operating a Production Cluster (DO180 - RHA)</h1>
+          </div>
+          <div className="flex justify-center items-center w-[22vw] bg-amber-600 rounded-md h-[50vh]">
+            <h1>Introduction to CyberSecurity</h1>
+          </div>
+          <div className="flex justify-center items-center w-[22vw] bg-amber-600 rounded-md h-[50vh]">
+            <h1>Networking Devices and Initial Configuration</h1>
+          </div>
+        </div>     
       </div>
 
-      <div className="min-h-screen">
-        <h1>Projects </h1>
-        <div>Project 1 - ERP System</div>
-        <div>Project 2 - To Do List</div>
-        <div>Project 3 - Chat App</div>
+      <div className="min-h-screen flex flex-col justify-center items-center gap-6 ">
+        <h1  className="text-2xl font-bold ">Projects </h1>
+        <div className="flex gap-4">
+          <div className="flex justify-center items-center w-[22vw] bg-amber-600 rounded-md h-[50vh]">
+          Project 1 - ERP System
+          </div>
+          <div className="flex justify-center items-center w-[22vw] bg-amber-600 rounded-md h-[50vh]">
+          Project 2 - To Do List
+          </div>
+          <div className="flex justify-center items-center w-[22vw] bg-amber-600 rounded-md h-[50vh]">
+          Project 3 - Chat App
+          </div>
+        </div>
+        
       </div>
 
-      <div className="min-h-screen">
+      <div className="min-h-screen flex flex-col justify-center items-center gap-8">
+        <div className="flex justify-center items-center text-2xl font-bold">
           <h1>Experience and Education</h1>
+        </div>
+        <div className="flex justify-center items-center gap-2">
+          <div className="flex justify-center items-center w-[40vw] bg-amber-600 rounded-md h-[70vh]">
+            <h1>Experience</h1>
+            
+          </div>
+          <div className="flex justify-center items-center w-[40vw] bg-amber-600 rounded-md h-[70vh]">
+            <h1>Education</h1>
+          </div>
+        </div>
+          
       </div>
 
       <div className="min-h-screen flex justify-items-start ">
